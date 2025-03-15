@@ -1,2 +1,2 @@
-# P-NDULO_DOBLE.py-
+# PENDULO_DOBLE.py-
 Proyecto 1
