@@ -50,7 +50,7 @@ python main.py
 
 <h2 style="color: red;"> Explicación del Código</h2>
 
-### 🔹 `__init__(self, ...)`
+###  `__init__(self, ...)`
 El método `__init__` inicializa las variables del sistema:
 ```python
 def __init__(self, g, m1, m2, t1, t2, w1, w2, L1, L2):
@@ -65,7 +65,7 @@ def __init__(self, g, m1, m2, t1, t2, w1, w2, L1, L2):
     self.L2 = L2  # Longitud del segundo péndulo
 ```
 
-### 🔹 `@property` y `@setter`
+###  `@property` y `@setter`
 Estos decoradores se usan para **controlar y validar** los valores de los parámetros:
 ```python
 @property
@@ -82,7 +82,7 @@ def g(self, valor):
 
 ---
 
-<h2 style="color: red;">🎥 Visualización</h2>
+<h2 style="color: red;"> Visualización</h2>
 
 Este proyecto genera una simulación animada del péndulo doble utilizando `matplotlib`.
 
