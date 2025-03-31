@@ -1,4 +1,4 @@
-# PENDULO_DOBLE.py-
+# PENDULO_DOBLE
 Proyecto 1
 <h1 style="color: red;">Péndulo Doble - Simulación en Python</h1>
 
