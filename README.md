@@ -1,106 +1,84 @@
-# PENDULO_DOBLE
-Proyecto 1
-<h1 style="color: red;">Péndulo Doble - Simulación en Python</h1>
+# ⏰ Péndulo Doble en Python
 
-##  Introducción
-El **péndulo doble** es un sistema físico que consiste en dos péndulos acoplados, uno suspendido del otro. 
-Este sistema es un ejemplo clásico de un sistema **dinámico no lineal** y exhibe un comportamiento **caótico** dependiendo de sus condiciones iniciales.
-
-En este proyecto, hemos implementado una simulación del **péndulo doble** en Python utilizando **POO (Programación Orientada a Objetos)** y principios de la mecánica clásica.
+Este proyecto simula el **movimiento de un péndulo doble** utilizando **Python** y **matplotlib**. Se implementa la solución numérica mediante el **método de Runge-Kutta de 4to orden (RK4)** para resolver las ecuaciones diferenciales del sistema. Además, la animación incluye la visualización de la trayectoria y gráficas de los ángulos en función del tiempo.
 
 ---
 
-<h2 style="color: red;"> Características del Proyecto</h2>
+## 📚 Contenido del proyecto
 
-- Implementación basada en **Programación Orientada a Objetos**.
-- Uso de **métodos y propiedades** con `@property` para una mejor gestión de los parámetros.
-- Simulación utilizando **ecuaciones de Lagrange**.
-- Visualización gráfica del movimiento del péndulo doble.
+- **`pendulo_doble.py`**: Código principal que simula el movimiento del péndulo doble.
+- **`pendulo_doble.gif`**: Animación generada del péndulo en acción.
+- **`README.md`**: Este archivo con la documentación del proyecto.
 
 ---
 
-<h2 style="color: red;"> Estructura del Código</h2>
+## ⚡ Instalación
+
+Asegúrate de tener **Python 3.x** instalado. Luego, instala las dependencias necesarias con:
 
 ```bash
- pendulo_doble/
-│--  main.py          # Archivo principal de ejecución
-│--  pendulo.py       # Clase que define el Péndulo Doble
-│--  README.md        # Documentación del proyecto
+pip install matplotlib
 ```
 
 ---
 
-<h2 style="color: red;"> Instalación</h2>
+## 🔄 Uso
 
-Para ejecutar este proyecto en tu máquina, sigue estos pasos:
+Ejecuta el script con:
 
 ```bash
-# Clona el repositorio (si lo tienes en GitHub)
-git clone https://github.com/tu_usuario/pendulo_doble.git
-cd pendulo_doble
-
-# Instala las dependencias necesarias
-pip install numpy matplotlib
-
-# Ejecuta la simulación
-python main.py
+python pendulo_doble.py
 ```
 
----
-
-<h2 style="color: red;"> Explicación del Código</h2>
-
-###  `__init__(self, ...)`
-El método `__init__` inicializa las variables del sistema:
-```python
-def __init__(self, g, m1, m2, t1, t2, w1, w2, L1, L2):
-    self.g = g    # Gravedad
-    self.m1 = m1  # Masa del primer péndulo
-    self.m2 = m2  # Masa del segundo péndulo
-    self.t1 = t1  # Ángulo del primer péndulo
-    self.t2 = t2  # Ángulo del segundo péndulo
-    self.w1 = w1  # Velocidad angular del primer péndulo
-    self.w2 = w2  # Velocidad angular del segundo péndulo
-    self.L1 = L1  # Longitud del primer péndulo
-    self.L2 = L2  # Longitud del segundo péndulo
-```
-
-###  `@property` y `@setter`
-Estos decoradores se usan para **controlar y validar** los valores de los parámetros:
-```python
-@property
-def g(self):
-    return self._g
-
-@g.setter
-def g(self, valor):
-    if valor > 0:
-        self._g = valor
-    else:
-        raise ValueError("La gravedad debe ser positiva.")
-```
+Esto generará la animación del péndulo doble y guardará un GIF con la simulación.
 
 ---
 
-<h2 style="color: red;"> Visualización</h2>
+## 🌈 Características
 
-Este proyecto genera una simulación animada del péndulo doble utilizando `matplotlib`.
-
-Ejemplo de gráfica:
-
-![Ejemplo de simulación](https://upload.wikimedia.org/wikipedia/commons/5/5f/Doble_pendulo_animacion.gif)
-
----
-
-<h2 style="color: red;"> Contribuciones</h2>
-Si deseas mejorar este proyecto, ¡las contribuciones son bienvenidas! Puedes hacer un **fork** y enviar un **pull request**. 
+- ✨ Simulación en tiempo real del movimiento de un péndulo doble.
+- ⚙ Implementación de la **ecuación de Lagrange** para calcular la dinámica del sistema.
+- ⏰ Uso del **método de Runge-Kutta de 4to orden** para resolver las ecuaciones diferenciales.
+- 📊 Gráficos de los ángulos en función del tiempo.
+- 🎨 Animación interactiva con **matplotlib**.
 
 ---
 
-<h2 style="color: red;"> Licencia</h2>
-Este proyecto está bajo la licencia **MIT**. Puedes usarlo y modificarlo libremente.
+## 💡 Explicación breve del código
+
+1. **Definición de la clase `PenduloDoble`**, que hereda de `Pendulo` y `Energias`.
+2. **Cálculo de la ecuación de Lagrange** para obtener las ecuaciones de movimiento.
+3. **Resolución numérica** usando el **método RK4**.
+4. **Animación en matplotlib** que muestra la evolución del sistema.
+5. **Generación de un GIF** con la simulación.
 
 ---
 
-** Autor:** *Johans steven Hernandez Diaz*
+## 🌟 Ejemplo de salida
+
+Aquí tienes una vista previa de la animación generada:
+
+![Péndulo Doble](pendulo_doble.gif)
+
+---
+
+## ✨ Contribuciones
+
+Si deseas mejorar este proyecto, siéntete libre de hacer un **fork** y enviar un **pull request**. Toda contribución es bienvenida. ❤️
+
+---
+
+## 🛠️ Autor
+
+Proyecto desarrollado por **[Tu Nombre]**.
+
+👉 [GitHub](https://github.com/TU_USUARIO)  |  🌐 [LinkedIn](https://linkedin.com/in/TU_USUARIO)
+
+---
+
+## 🐟 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Puedes usarlo y modificarlo libremente. ✨
+
+
 
