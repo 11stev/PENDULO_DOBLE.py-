@@ -27,7 +27,7 @@ pip install matplotlib
 Ejecuta el script con:
 
 ```bash
-python pendulo_doble.py
+python PENDULO_DOBLE.py
 ```
 
 Esto generará la animación del péndulo doble y guardará un GIF con la simulación.
