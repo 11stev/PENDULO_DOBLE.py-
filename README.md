@@ -70,7 +70,7 @@ Si deseas mejorar este proyecto, siéntete libre de hacer un **fork** y enviar u
 
 ## 🛠️ Autor
 
-Proyecto desarrollado por **[Tu Nombre]**.
+Proyecto desarrollado por **[Johans Steven Hernandez Diaz]**.
 
 👉 [GitHub](https://github.com/TU_USUARIO)  |  🌐 [LinkedIn](https://linkedin.com/in/TU_USUARIO)
 
