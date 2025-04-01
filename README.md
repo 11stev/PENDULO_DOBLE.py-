@@ -6,7 +6,7 @@ Este proyecto simula el **movimiento de un péndulo doble** utilizando **Python*
 
 ## 📚 Contenido del proyecto
 
-- **`pendulo_doble.py`**: Código principal que simula el movimiento del péndulo doble.
+- **`PENDULO_DOBLE.py`**: Código principal que simula el movimiento del péndulo doble.
 - **`pendulo_doble.gif`**: Animación generada del péndulo en acción.
 - **`README.md`**: Este archivo con la documentación del proyecto.
 
